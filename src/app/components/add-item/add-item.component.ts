@@ -11,8 +11,7 @@ export class AddItemComponent implements OnInit {
 
   constructor(private toDoService: TodoService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   addElement = () => {
     this.toDoService.addItem(this.content)

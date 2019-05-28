@@ -12,10 +12,7 @@ export class ElementComponent implements OnInit {
 
   constructor(private toDoService: TodoService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  deleteItem = () => {
-    this.toDoService.deleteItem(this.toDoElement.id);
-  }
+  deleteItem = () => this.toDoService.deleteItem(this.toDoElement.id);
 }

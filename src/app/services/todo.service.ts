@@ -12,10 +12,8 @@ export class TodoService {
     this.elements = ELEMENTS;
   }
 
-  getToDoItems = (): ToDoElement[] => {
-    return this.elements;
-  }
-
+  getToDoItems = (): ToDoElement[] => this.elements;
+  
   addItem = (content: string) : void => {
     this.elements.push(new ToDoElement(this.elements.length + 1, content));
   }

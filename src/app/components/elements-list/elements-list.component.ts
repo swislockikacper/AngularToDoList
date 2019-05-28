@@ -10,14 +10,9 @@ import { TodoService } from 'src/app/services/todo.service';
 export class ElementsListComponent implements OnInit {
   elements: ToDoElement[];
 
-  constructor(private todoService: TodoService) {
-  }
+  constructor(private todoService: TodoService) { }
 
-  getElements(): ToDoElement[] {
-    return this.todoService.getToDoItems();
-  }
-
-  ngOnInit() {
-  }
-
+  getElements = (): ToDoElement[] => this.todoService.getToDoItems();
+  
+  ngOnInit() { }
 }
